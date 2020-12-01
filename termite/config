@@ -1,0 +1,70 @@
+[options]
+font = Fira Code 14
+scrollback_lines = 10000
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+scrollbar = off
+
+[colors]
+# https://github.com/khamer/base16-termite
+foreground          = #383a42
+foreground_bold     = #383a42
+cursor              = #383a42
+cursor_foreground   = #fafafa
+background          = #fafafa
+
+# 16 color space
+
+# Black, Gray, Silver, White
+color0  = #fafafa
+color8  = #a0a1a7
+color7  = #383a42
+color15 = #090a0b
+
+# Red
+color1  = #ca1243
+color9  = #ca1243
+
+# Green
+color2  = #50a14f
+color10 = #50a14f
+
+# Yellow
+color3  = #c18401
+color11 = #c18401
+
+# Blue
+color4  = #4078f2
+color12 = #4078f2
+
+# Purple
+color5  = #a626a4
+color13 = #a626a4
+
+# Teal
+color6  = #0184bc
+color14 = #0184bc
+
+# Extra colors
+color16 = #d75f00
+color17 = #986801
+color18 = #f0f0f1
+color19 = #e5e5e6
+color20 = #696c77
+color21 = #202227
+# vim: ft=dosini cms=#%s
