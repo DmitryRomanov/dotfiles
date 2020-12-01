@@ -1,0 +1,29 @@
+[user]
+    name = Dmitry Romanov
+    email = dmitry.romanov85@protonmail.com
+    signingkey = ***
+[branch]
+    autosetuprebase = always
+    sort = -authordate
+[push]
+	default = current
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    pl = pull --rebase
+    appraise = !/bin/git-appraise
+[commit]
+	gpgsign = true
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/
+[core]
+	editor = nano
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
