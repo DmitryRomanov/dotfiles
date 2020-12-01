@@ -1,2 +1,2 @@
-
-ln -s `pwd`/i3 ~/.config/i3
+ln -nsf `pwd`/i3/ ~/.config/
+ln -nsf `pwd`/rofi/ ~/.config/
