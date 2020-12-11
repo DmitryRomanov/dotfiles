@@ -21,7 +21,7 @@ set $mod Mod4
 font pango:Fira Code Medium 12
 
 title_align left
-workspace_layout tabbed
+workspace_layout stacked
 
 hide_edge_borders both
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
