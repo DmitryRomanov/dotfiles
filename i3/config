@@ -59,7 +59,7 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec terminator
 bindsym $mod+Return exec termite
-bindsym $mod+Shift+o exec GDK_DPI_SCALE=1.3 firefox
+bindsym $mod+Shift+o exec GDK_DPI_SCALE=1.25 firefox
 bindsym $mod+Tab exec rofi -show window -show-icons
 # kill focused window
 bindsym $mod+Shift+q kill
