@@ -1,4 +1,7 @@
 #+TITLE: TODO
 -------------------------
 
+* TODO readme
 * TODO i3 gaps
+* DONE screenshots
+
