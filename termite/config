@@ -1,5 +1,5 @@
 [options]
-font = Fira Code 14
+font = Iosevka 14
 scrollback_lines = 10000
 
 # "system", "on" or "off"

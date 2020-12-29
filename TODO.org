@@ -2,6 +2,7 @@
 -------------------------
 
 * TODO readme
+* TODO lock script
 * TODO i3 gaps
 * DONE screenshots
 

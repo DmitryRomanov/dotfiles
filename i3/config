@@ -21,7 +21,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 
-font pango:Fira Code Medium 12
+font pango:JetBrainsMonoMedium Nerd Font 12
 
 title_align left
 workspace_layout stacked
@@ -62,7 +62,7 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec terminator
 bindsym $mod+Return exec termite
-bindsym $mod+Shift+o exec GDK_DPI_SCALE=1.25 firefox
+bindsym $mod+Shift+o exec GDK_DPI_SCALE=1.2 firefox
 bindsym $mod+Tab exec rofi -show window -show-icons
 # kill focused window
 bindsym $mod+Shift+q kill
