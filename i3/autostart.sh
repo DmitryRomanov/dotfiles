@@ -3,7 +3,7 @@ nitrogen --restore
 redshift-gtk &
 dropbox start &
 nm-applet &
-telegram-desktop &
+QT_QPA_PLATFORMTHEME=gtk3 TDESKTOP_I_KNOW_ABOUT_GTK_INCOMPATIBILITY=1 telegram-desktop &
 polybar -c ~/.config/polybar/config.ini main &
 polybar -c ~/.config/polybar/config.ini second &
 xcompmgr -c -f -nv &
