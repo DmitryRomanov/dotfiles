@@ -62,7 +62,7 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec terminator
 bindsym $mod+Return exec kitty
-bindsym $mod+Shift+o exec GDK_DPI_SCALE=1.2 firefox
+bindsym $mod+Shift+o exec firefox
 bindsym $mod+Tab exec rofi -show window -show-icons
 # kill focused window
 bindsym $mod+Shift+q kill
