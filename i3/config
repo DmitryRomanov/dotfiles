@@ -24,10 +24,16 @@ set $mod Mod4
 font pango:Iosevka Semibold 12
 
 title_align left
-workspace_layout stacked
+workspace_layout tabbed
 
 hide_edge_borders both
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
+for_window [class=".*"] border pixel 0
+smart_gaps on
+smart_borders on
+
+gaps inner 2
+gaps outer 1
 
 hide_edge_borders both
 
