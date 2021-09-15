@@ -67,8 +67,8 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec terminator
-bindsym $mod+Return exec kitty
-bindsym $mod+Shift+o exec firefox
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+o exec /opt/google/chrome/chrome --force-device-scale-factor=1.2
 bindsym $mod+Tab exec rofi -show window -show-icons
 # kill focused window
 bindsym $mod+Shift+q kill

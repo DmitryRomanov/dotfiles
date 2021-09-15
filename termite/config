@@ -1,5 +1,5 @@
 [options]
-font = Iosevka 14
+font = Jetbrains Mono 14
 scrollback_lines = 10000
 
 # "system", "on" or "off"
