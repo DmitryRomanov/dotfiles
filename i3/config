@@ -21,21 +21,25 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 
-font pango:Iosevka Bold 11
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango:Iosevka Bold 10.5
 
 title_align left
 workspace_layout stacked
 
+# for_window [class=".*"] border pixel 0
+# smart_gaps on
+# smart_borders on
+
+# New tiling windows with title bar and borders
+new_window normal 0
+# New floating windows with title bar and without borders
+new_float normal 0
+# Hide borders on edges
 hide_edge_borders both
-for_window [class="^jetbrains-.+"][window_type=dialog] focus
-for_window [class=".*"] border pixel 0
-smart_gaps on
-smart_borders on
 
 gaps inner 2
 gaps outer 1
-
-hide_edge_borders both
 
 client.focused          #4A5993 #3C4771 #f7f3f7 #2e9ef4   #3C4771
 client.focused_inactive #333333 #5f676a #f7f3f7 #484e50   #5f676a
@@ -119,25 +123,24 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# Set variables for floating and un-floating commands
+set $FLOAT floating enable, border normal 0
+set $UNFLOAT floating disable, border normal 2
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# Put windows on floating layer and remove borders (Super+Shift+Space)
+bindcode $mod+Shift+65 $FLOAT
+# Make windows on tiling layer and add borders (Super+Control+Space)
+bindcode $mod+Control+65 $UNFLOAT
 
 # focus the parent container
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
-
-set $telegram_workspace 2
-assign [class="Telegram"] $telegram_workspace
-workspace $telegram_workspace output $monitor_left
+# bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace $telegram_workspace
+bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
@@ -150,7 +153,7 @@ bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace $telegram_workspace
+bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
@@ -199,6 +202,8 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3status
     strip_workspace_numbers yes
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:Iosevka Semibold 10.5
 
     colors {
         background #f7f3f7
