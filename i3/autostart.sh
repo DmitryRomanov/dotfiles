@@ -3,6 +3,7 @@ nitrogen --restore
 redshift-gtk &
 gxkb &
 nm-applet &
+yandex-disk start &
 QT_QPA_PLATFORMTHEME=qt5ct TDESKTOP_I_KNOW_ABOUT_GTK_INCOMPATIBILITY=1 kotatogram-desktop &
 #polybar -c ~/.config/polybar/config.ini main &
 #polybar -c ~/.config/polybar/config.ini second &

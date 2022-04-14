@@ -1,6 +1,6 @@
 configuration {
  modi: "window,drun,ssh,combi";
  theme: "solarized";
- font: "hack 10";
+ font: "Fira Code Medium 14";
  combi-modi: "window,drun,ssh";
  }
