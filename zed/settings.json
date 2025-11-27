@@ -107,6 +107,11 @@
     "Terraform": ["**/*.nomad"]
   },
   "lsp": {
+    "jsonnet-language-server": {
+      "settings": {
+        "resolve_paths_with_tanka": true
+      }
+    },
     "gopls": {
       "initialization_options": {
         "hints": {

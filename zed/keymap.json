@@ -12,14 +12,25 @@
       "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
-      "v s": "pane::SplitRight",
-      "s p": "pane::SplitUp"
+      "space w d": "pane::CloseActiveItem"
     }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {}
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "v s": "pane::SplitRight",
+      "s p": "pane::SplitUp",
+      "space f s": "workspace::Save"
     }
   },
   {
