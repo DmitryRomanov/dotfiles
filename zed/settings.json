@@ -71,6 +71,11 @@
     }
   },
   "entry_spacing": "standard",
+  "languages": {
+    "Dockerfile": {
+      "format_on_save": "off"
+    }
+  },
   "file_types": {
     "Ansible": [
       "**.ansible.yml",
