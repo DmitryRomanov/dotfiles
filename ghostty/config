@@ -1,0 +1,111 @@
+font-family = "CaskaydiaCove Nerd Font Mono"
+font-size = 22
+#adjust-cell-width = -1
+#adjust-cell-height=-1
+#window-padding-y = 3
+#window-padding-x = 5
+
+# theme = "Argonaut"
+# theme = "0x96f"
+# theme = "Adventure"
+#theme = "arcoiris"
+#theme = "Arthur"
+#theme = "Dark Pastel"
+#theme = "Dark+"
+#theme = "Grape"
+#theme = "Darkside"
+#theme = "Dark Modern"
+#theme = "deep"
+#theme = "Desert"
+#theme = "detuned"
+#theme = "Dimidium"
+#theme = "DimmedMonokai"
+#theme = "Doom Peacock"
+# theme = "Dracula"
+#theme = "Dracula+"
+#theme = "Hardcore"
+# theme = "iTerm2 Tango Dark"
+# theme = "Builtin Tango Dark"
+# theme = "Wild Cherry"
+#theme = "Flatland"
+#theme = "flexoki-dark"
+#theme = "Floraverse"
+#theme = "Framer"
+#theme = "FrontEndDelight"
+#theme = "Galizur"
+#theme = "Monokai Classic"
+# theme = "gruber-darker"
+# theme = "gruvbox-material"
+# theme = "GruvboxDarkHard"
+#theme = "Hurtado"
+# theme = "Hybrid"
+# theme = "idea"
+# theme = "Seti"
+# theme = "srcery"
+# theme = "starlight"
+# theme = "Tomorrow Night Bright"
+# theme = "Smyck"
+theme = "Monokai Soda"
+# theme = "Kanagawa Wave"
+# theme = "kanagawabones"
+# Light
+# theme = "3024 Day"
+# theme = "Atom One Light"
+# theme = "One Double Light"
+# theme = "Adwaita"
+# theme = "Breadog"
+# theme = "Catppuccin Latte"
+# theme = primary
+# theme = Piatto Light
+# theme = Raycast_Light
+# theme = OneHalfLight
+# theme = Material
+# theme = Spring
+# theme = Night Owlish Light
+# theme = Pro Light
+# theme = Light Owl
+# theme = iTerm2 Tango Light
+# theme = Tango Adapted
+# theme = Tango Half Adapted
+# theme = dayfox
+# theme = Tomorrow
+# theme = CLRS
+# theme = Builtin Tango Light
+# theme = BlulocoLight
+# theme = Alabaster
+# theme = 3024 Day
+
+
+command = "/opt/homebrew/bin/tmux"
+window-decoration = auto
+window-show-tab-bar = never
+maximize = true
+macos-non-native-fullscreen = false
+macos-titlebar-style = native
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+mouse-hide-while-typing = true
+macos-titlebar-proxy-icon = hidden
+window-save-state = always
+
+background-opacity = 0.98
+unfocused-split-opacity = 0.5
+keybind = ctrl+x>3=new_split:right
+keybind = ctrl+x>2=new_split:up
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+j=goto_split:bottom
+# keybind = ctrl+shift+left=resize_split:left,10
+# keybind = ctrl+shift+right=resize_split:right,10
+# keybind = ctrl+shift+up=resize_split:up,10
+# keybind = ctrl+shift+down=resize_split:down,10
+keybind = super+l=clear_screen
+keybind = ctrl+t=new_tab
+keybind = ctrl+shift+left_bracket=previous_tab
+keybind = ctrl+shift+right_bracket=next_tab
+# keybind = super+,=reload_config
+keybind = alt+up=scroll_page_lines:-2
+keybind = alt+down=scroll_page_lines:2
+confirm-close-surface = false
