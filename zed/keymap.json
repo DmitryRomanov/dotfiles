@@ -9,7 +9,6 @@
   {
     "context": "Workspace",
     "bindings": {
-      "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem"
