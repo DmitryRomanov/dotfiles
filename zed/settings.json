@@ -70,7 +70,6 @@
       "breadcrumbs": false
     }
   },
-  "entry_spacing": "standard",
   "languages": {
     "Dockerfile": {
       "format_on_save": "off"
