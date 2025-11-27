@@ -9,13 +9,17 @@
   {
     "context": "Workspace",
     "bindings": {
-      "space space": "file_finder::Toggle"
+      "space space": "file_finder::Toggle",
+      "space /": "pane::DeploySearch",
+      "space ,": "tab_switcher::Toggle",
+      "v s": "pane::SplitRight",
+      "s p": "pane::SplitUp"
     }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      // "j k": "vim::NormalBefore"
+      "j k": "vim::NormalBefore"
     }
   },
   {
