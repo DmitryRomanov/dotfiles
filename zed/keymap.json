@@ -9,6 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
+      "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem"
@@ -17,7 +18,11 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": "vim::NormalBefore"
+      "j k": "vim::NormalBefore",
+      "space space": null,
+      "space /": null,
+      "space ,": null,
+      "space w d": null
     }
   },
   {
