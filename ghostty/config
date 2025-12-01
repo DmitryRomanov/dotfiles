@@ -97,15 +97,10 @@ keybind = ctrl+shift+h=goto_split:left
 keybind = ctrl+shift+l=goto_split:right
 keybind = ctrl+shift+k=goto_split:top
 keybind = ctrl+shift+j=goto_split:bottom
-# keybind = ctrl+shift+left=resize_split:left,10
-# keybind = ctrl+shift+right=resize_split:right,10
-# keybind = ctrl+shift+up=resize_split:up,10
-# keybind = ctrl+shift+down=resize_split:down,10
 keybind = super+l=clear_screen
-keybind = ctrl+t=new_tab
-keybind = ctrl+shift+left_bracket=previous_tab
-keybind = ctrl+shift+right_bracket=next_tab
+keybind = ctrl+shift+t=ignore
+
 # keybind = super+,=reload_config
 keybind = alt+up=scroll_page_lines:-2
 keybind = alt+down=scroll_page_lines:2
-confirm-close-surface = false
+confirm-close-surface = true
