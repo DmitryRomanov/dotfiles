@@ -21,6 +21,7 @@
   "debugger": {
     "dock": "left"
   },
+  "relative_line_numbers": "enabled",
   "toolbar": {
     "breadcrumbs": true
   },
