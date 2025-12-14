@@ -88,8 +88,16 @@ shell-integration-features = no-cursor
 mouse-hide-while-typing = true
 macos-titlebar-proxy-icon = hidden
 window-save-state = always
+window-decoration = server
+window-theme = dark
+gtk-titlebar = true
+gtk-tabs-location = top
+gtk-wide-tabs = true
+adw-toolbar-style = raised-border
+
 
 background-opacity = 0.98
+background-blur-radius = 20
 unfocused-split-opacity = 0.5
 keybind = ctrl+x>3=new_split:right
 keybind = ctrl+x>2=new_split:up
