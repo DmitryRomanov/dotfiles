@@ -45,7 +45,7 @@ font-size = 22
 # theme = "starlight"
 # theme = "Tomorrow Night Bright"
 # theme = "Smyck"
-theme = "Monokai Soda"
+# theme = "Monokai Soda"
 # theme = "Kanagawa Wave"
 # theme = "kanagawabones"
 # Light
@@ -112,3 +112,5 @@ keybind = ctrl+shift+t=ignore
 keybind = alt+up=scroll_page_lines:-2
 keybind = alt+down=scroll_page_lines:2
 confirm-close-surface = true
+
+config-file = ?local_config
