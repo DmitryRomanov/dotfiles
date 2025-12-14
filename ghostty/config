@@ -1,7 +1,8 @@
 font-family = "CaskaydiaCove Nerd Font Mono"
 font-size = 22
-#adjust-cell-width = -1
-#adjust-cell-height=-1
+
+#adjust-cell-width = -2
+#adjust-cell-height = 0
 #window-padding-y = 3
 #window-padding-x = 5
 
@@ -34,7 +35,7 @@ font-size = 22
 #theme = "FrontEndDelight"
 #theme = "Galizur"
 #theme = "Monokai Classic"
-# theme = "gruber-darker"
+# theme = "Gruber Darker"
 # theme = "gruvbox-material"
 # theme = "GruvboxDarkHard"
 #theme = "Hurtado"
