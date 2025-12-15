@@ -13,6 +13,13 @@
         "task::Spawn",
         { "task_name": "Television File Finder", "reveal_target": "center" }
       ],
+      "space .": [
+        "task::Spawn",
+        {
+          "task_name": "Television File Finder (current folder)",
+          "reveal_target": "center"
+        }
+      ],
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem"

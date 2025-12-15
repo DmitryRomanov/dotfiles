@@ -6,5 +6,13 @@
     "hide": "always",
     "allow_concurrent_runs": true,
     "use_new_terminal": true
+  },
+  {
+    "label": "Television File Finder (current folder)",
+    "command": "zed \"$(tv files)\"",
+    "cwd": "$ZED_DIRNAME",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true
   }
 ]
