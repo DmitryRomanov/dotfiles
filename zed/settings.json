@@ -13,6 +13,8 @@
     "dark": "Gruvbox Dark"
   },
 
+  "tabs": { "file_icons": true },
+
   "line_indicator_format": "short",
   "features": {
     // "inline_completion_provider": "none",
