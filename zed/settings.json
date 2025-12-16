@@ -63,7 +63,7 @@
     "metrics": false
   },
   "terminal": {
-    "font_size": 14,
+    "font_size": 18,
     "alternate_scroll": "on",
     "line_height": "standard",
     "blinking": "on",
