@@ -11,19 +11,19 @@
     "bindings": {
       "space space": [
         "task::Spawn",
-        { "task_name": "Television File Finder", "reveal_target": "center" }
+        { "task_name": "Television File Finder", "reveal_target": "center" },
       ],
       "space .": [
         "task::Spawn",
         {
           "task_name": "Television File Finder (current folder)",
-          "reveal_target": "center"
-        }
+          "reveal_target": "center",
+        },
       ],
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
-      "space w d": "pane::CloseActiveItem"
-    }
+      "space w d": "pane::CloseActiveItem",
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
@@ -31,32 +31,32 @@
       "space space": null,
       "space /": null,
       "space ,": null,
-      "space w d": null
-    }
+      "space w d": null,
+    },
   },
   {
     "context": "Editor",
-    "bindings": {}
+    "bindings": {},
   },
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "v s": "pane::SplitRight",
       "s p": "pane::SplitUp",
-      "space f s": "workspace::Save"
-    }
+      "space f s": "workspace::Save",
+    },
   },
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "shift-s": null
-    }
+      "shift-s": null,
+    },
   },
   {
     "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
     "bindings": {
-      "shift-s": null
-    }
+      "shift-s": null,
+    },
   },
   {
     "context": "Editor && !menu",
@@ -69,7 +69,7 @@
       "ctrl-o": "workspace::Open", // vim default: go back
       "ctrl-s": "workspace::Save", // vim default: show signature
       "ctrl-a": "editor::SelectAll", // vim default: increment
-      "ctrl-b": "workspace::ToggleLeftDock" // vim default: down
-    }
-  }
+      "ctrl-b": "workspace::ToggleLeftDock", // vim default: down
+    },
+  },
 ]

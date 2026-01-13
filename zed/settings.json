@@ -8,9 +8,9 @@
 // from the command palette or from `Zed` application menu.
 {
   "theme": {
-    "mode": "system",
-    "light": "Zedokai Light",
-    "dark": "Gruvbox Dark"
+    "mode": "light",
+    "light": "Tomorrow Min",
+    "dark": "Gruvbox Dark",
   },
 
   "tabs": { "file_icons": true },
@@ -18,15 +18,15 @@
   "line_indicator_format": "short",
   "features": {
     // "inline_completion_provider": "none",
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "none",
   },
   "debugger": {
-    "dock": "left"
+    "dock": "left",
   },
   "show_completions_on_input": false,
   "relative_line_numbers": "enabled",
   "toolbar": {
-    "breadcrumbs": true
+    "breadcrumbs": true,
   },
   "title_bar": {
     "show_branch_icon": true,
@@ -35,15 +35,15 @@
     "show_onboarding_banner": false,
     "show_user_picture": false,
     "show_sign_in": false,
-    "show_menus": false
+    "show_menus": false,
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "disable_ai": true,
   "vim_mode": true,
@@ -60,7 +60,7 @@
   "buffer_font_size": 18,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "terminal": {
     "font_size": 18,
@@ -71,13 +71,13 @@
     "cursor_shape": "block",
     "keep_selection_on_copy": false,
     "toolbar": {
-      "breadcrumbs": false
-    }
+      "breadcrumbs": false,
+    },
   },
   "languages": {
     "Dockerfile": {
-      "format_on_save": "off"
-    }
+      "format_on_save": "off",
+    },
   },
   "file_types": {
     "Ansible": [
@@ -97,7 +97,7 @@
       "**/playbooks/*.yaml",
       "**/playbooks/*.yml",
       "**playbook*.yaml",
-      "**playbook*.yml"
+      "**playbook*.yml",
     ],
     "Helm": [
       "**/templates/**/*.tpl",
@@ -105,15 +105,15 @@
       "**/templates/**/*.yml",
       "**/helmfile.d/**/*.yaml",
       "**/helmfile.d/**/*.yml",
-      "**/values*.yaml"
+      "**/values*.yaml",
     ],
-    "Terraform": ["**/*.nomad"]
+    "Terraform": ["**/*.nomad"],
   },
   "lsp": {
     "jsonnet-language-server": {
       "settings": {
-        "resolve_paths_with_tanka": true
-      }
+        "resolve_paths_with_tanka": true,
+      },
     },
     "gopls": {
       "initialization_options": {
@@ -124,33 +124,33 @@
           "constantValues": true,
           "functionTypeParameters": true,
           "parameterNames": true,
-          "rangeVariableTypes": true
-        }
-      }
+          "rangeVariableTypes": true,
+        },
+      },
     },
     "ansible-language-server": {
       "settings": {
         "ansible": {
-          "path": "ansible"
+          "path": "ansible",
         },
         "executionEnvironment": {
-          "enabled": false
+          "enabled": false,
         },
         "python": {
-          "interpreterPath": "python3"
+          "interpreterPath": "python3",
         },
         "validation": {
           "enabled": true,
           // To enable linting, manually install ansible-lint and make sure it is your PATH
           "lint": {
             "enabled": true,
-            "path": "ansible-lint"
-          }
-        }
-      }
+            "path": "ansible-lint",
+          },
+        },
+      },
     },
     "python": {
-      "enabled": false
+      "enabled": false,
     },
     "rust-analyzer": {
       "initialization_options": {
@@ -158,12 +158,12 @@
           "maxLength": null,
           "lifetimeElisionHints": {
             "enable": "skip_trivial",
-            "useParameterNames": true
+            "useParameterNames": true,
           },
           "closureReturnTypeHints": {
-            "enable": "always"
-          }
-        }
+            "enable": "always",
+          },
+        },
       },
       "completion": {
         "snippets": {
@@ -172,39 +172,39 @@
               "postfix": "arc",
               "body": ["Arc::new(${receiver})"],
               "requires": "std::sync::Arc",
-              "scope": "expr"
+              "scope": "expr",
             },
             "Some": {
               "postfix": "some",
               "body": ["Some(${receiver})"],
-              "scope": "expr"
+              "scope": "expr",
             },
             "Ok": {
               "postfix": "ok",
               "body": ["Ok(${receiver})"],
-              "scope": "expr"
+              "scope": "expr",
             },
             "Rc::new": {
               "postfix": "rc",
               "body": ["Rc::new(${receiver})"],
               "requires": "std::rc::Rc",
-              "scope": "expr"
+              "scope": "expr",
             },
             "Box::pin": {
               "postfix": "boxpin",
               "body": ["Box::pin(${receiver})"],
               "requires": "std::boxed::Box",
-              "scope": "expr"
+              "scope": "expr",
             },
             "vec!": {
               "postfix": "vec",
               "body": ["vec![${receiver}]"],
               "description": "vec![]",
-              "scope": "expr"
-            }
-          }
-        }
-      }
-    }
-  }
+              "scope": "expr",
+            },
+          },
+        },
+      },
+    },
+  },
 }
