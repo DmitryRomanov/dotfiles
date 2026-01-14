@@ -8,8 +8,8 @@
 // from the command palette or from `Zed` application menu.
 {
   "theme": {
-    "mode": "light",
-    "light": "Tomorrow Min",
+    "mode": "system",
+    "light": "Zedokai Light",
     "dark": "Gruvbox Dark",
   },
 
