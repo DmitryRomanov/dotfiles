@@ -56,9 +56,9 @@ font-size = 22
 # theme = "Adwaita"
 # theme = "Breadog"
 # theme = "Catppuccin Latte"
-# theme = primary
+# theme = Primary
 # theme = Piatto Light
-# theme = Raycast_Light
+# theme = Raycast Light
 # theme = OneHalfLight
 # theme = Material
 # theme = Spring
@@ -75,6 +75,7 @@ font-size = 22
 # theme = BlulocoLight
 # theme = Alabaster
 # theme = 3024 Day
+# theme = Flexoki Light
 
 
 command = "/opt/homebrew/bin/tmux"
@@ -99,7 +100,6 @@ adw-toolbar-style = raised-border
 
 background-opacity = 0.98
 background-blur-radius = 20
-unfocused-split-opacity = 0.5
 keybind = ctrl+x>3=new_split:right
 keybind = ctrl+x>2=new_split:up
 keybind = ctrl+shift+h=goto_split:left
