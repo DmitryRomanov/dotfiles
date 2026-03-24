@@ -15,6 +15,20 @@
     "light": "Zedokai Light",
     "dark": "Gruvbox Dark",
   },
+  "semantic_tokens": "full",
+  "experimental.theme_overrides": {
+    "syntax": {
+      "type": {
+        "font_weight": 800,
+      },
+      "keyword": {
+        "font_weight": 800,
+      },
+      "punctuation.bracket": {
+        "font_weight": 100,
+      },
+    },
+  },
 
   "tabs": { "file_icons": true },
 
