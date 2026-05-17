@@ -8,7 +8,19 @@
 // from the command palette or from `Zed` application menu.
 {
   "edit_predictions": {
-    "provider": "none"
+    "provider": "none",
+  },
+  "current_line_highlight": "line",
+  "gutter": {
+    "line_numbers": true,
+    "runnables": true,
+    "breakpoints": true,
+    "folds": true,
+    "min_line_number_digits": 0,
+  },
+  "active_pane_modifiers": {
+    "border_size": 0.5,
+    "inactive_opacity": 1.0,
   },
   "cli_default_open_behavior": "existing_window",
   "project_panel": {
@@ -31,6 +43,13 @@
     "light": "Zedokai Light",
     "dark": "Gruvbox Dark",
   },
+  "profiles": {
+    "Laptop": {
+      "settings": {
+        "ui_font_family": "Iosevka Nerd Font Mono",
+      },
+    },
+  },
   "semantic_tokens": "full",
   "experimental.theme_overrides": {
     "syntax": {
@@ -45,17 +64,31 @@
       },
     },
   },
-
-  "tabs": { "file_icons": true },
-
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history",
+    "show_close_button": "hover",
+    "show_diagnostics": "off",
+  },
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": true,
+    "line_endings_button": false,
+  },
   "line_indicator_format": "short",
   "debugger": {
     "dock": "left",
   },
   "show_completions_on_input": false,
-  "relative_line_numbers": "enabled",
+  "relative_line_numbers": "wrapped",
   "toolbar": {
     "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": true,
+    "agent_review": true,
+    "code_actions": false,
   },
   "title_bar": {
     "show_branch_status_icon": true,
@@ -65,6 +98,7 @@
     "show_user_picture": false,
     "show_sign_in": false,
     "show_menus": false,
+    "button_layout": "platform_default",
   },
   "git": {
     "inline_blame": {
@@ -102,6 +136,12 @@
     "keep_selection_on_copy": false,
     "toolbar": {
       "breadcrumbs": false,
+    },
+    "detect_venv": {
+      "on": {
+        "directories": [".env", "env", ".venv", "venv"],
+        "activate_script": "default",
+      },
     },
   },
   "languages": {
