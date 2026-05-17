@@ -10,6 +10,14 @@
   "edit_predictions": {
     "provider": "none",
   },
+  "agent_servers": {
+    "OpenCode": {
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+      "env": {},
+    },
+  },
   "current_line_highlight": "line",
   "gutter": {
     "line_numbers": true,
@@ -99,7 +107,7 @@
     "dock": "left",
     "button": false,
   },
-  "disable_ai": true,
+  "disable_ai": false,
   "vim_mode": true,
   "base_keymap": "VSCode",
   // "buffer_font_family": "FiraCode Nerd Font Mono",
