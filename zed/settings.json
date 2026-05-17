@@ -54,20 +54,6 @@
       },
     },
   },
-  "semantic_tokens": "full",
-  "experimental.theme_overrides": {
-    "syntax": {
-      "type": {
-        "font_weight": 800,
-      },
-      "keyword": {
-        "font_weight": 800,
-      },
-      "punctuation.bracket": {
-        "font_weight": 100,
-      },
-    },
-  },
   "tabs": {
     "close_position": "right",
     "file_icons": true,
@@ -148,9 +134,26 @@
       },
     },
   },
+  "semantic_tokens": "combined",
   "languages": {
+    "Go": {
+      "semantic_tokens": "full",
+    },
     "Dockerfile": {
       "format_on_save": "off",
+    },
+  },
+  "experimental.theme_overrides": {
+    "syntax": {
+      "type": {
+        "font_weight": 800,
+      },
+      "keyword": {
+        "font_weight": 800,
+      },
+      "punctuation.bracket": {
+        "font_weight": 100,
+      },
     },
   },
   "file_types": {
