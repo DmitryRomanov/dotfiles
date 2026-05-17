@@ -1,5 +1,5 @@
-font-family = "CaskaydiaCove Nerd Font Mono"
-font-size = 22
+#font-family = "CaskaydiaCove Nerd Font Mono"
+#font-size = 22
 
 #adjust-cell-width = -2
 #adjust-cell-height = 0
@@ -105,7 +105,12 @@ background-opacity = 0.98
 background-blur-radius = 20
 keybind = super+l=clear_screen
 keybind = ctrl+shift+t=ignore
-
+keybind = ctrl+x>3=new_split:right
+keybind = ctrl+x>2=new_split:up
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+j=goto_split:bottom
 # keybind = super+,=reload_config
 keybind = alt+up=scroll_page_lines:-2
 keybind = alt+down=scroll_page_lines:2
