@@ -103,7 +103,7 @@
     "show_diagnostics": "off",
   },
   "tab_bar": {
-    "show": false,
+    "show": true,
   },
   "status_bar": {
     "active_language_button": true,
@@ -117,7 +117,7 @@
   },
   "relative_line_numbers": "wrapped",
   "toolbar": {
-    "breadcrumbs": true,
+    "breadcrumbs": false,
     "quick_actions": false,
     "selections_menu": true,
     "agent_review": true,
@@ -180,9 +180,9 @@
   },
   "semantic_tokens": "combined",
   "languages": {
-    "Go": {
-      "semantic_tokens": "full",
-    },
+    // "Go": {
+    //   "semantic_tokens": "full",
+    // },
     "Dockerfile": {
       "format_on_save": "off",
     },
