@@ -7,6 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
   "edit_predictions": {
     "provider": "none",
   },
@@ -19,6 +24,12 @@
     },
   },
   "current_line_highlight": "line",
+  "show_whitespaces": "none",
+  "tab_size": 2,
+  "auto_indent_on_paste": false,
+  "show_completions_on_input": true,
+  "show_completion_documentation": false,
+  "inline_code_actions": false,
   "gutter": {
     "line_numbers": true,
     "runnables": true,
@@ -33,6 +44,27 @@
   "cli_default_open_behavior": "existing_window",
   "project_panel": {
     "dock": "left",
+    "default_width": 400,
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    "starts_open": true,
+    "git_status": true,
+    "sticky_scroll": false,
+    "scrollbar": {
+      "show": "never",
+    },
+    "indent_guides": {
+      "show": "never",
+    },
+    "outline_panel": {
+      "default_width": 100,
+      "indent_guides": {
+        "show": "never",
+      },
+    },
+    "file_finder": {
+      "modal_max_width": "large",
+    },
   },
   "outline_panel": {
     "dock": "left",
@@ -70,16 +102,19 @@
     "show_close_button": "hover",
     "show_diagnostics": "off",
   },
+  "tab_bar": {
+    "show": false,
+  },
   "status_bar": {
     "active_language_button": true,
     "cursor_position_button": true,
     "line_endings_button": false,
+    // "experimental.show": false,
   },
   "line_indicator_format": "short",
   "debugger": {
     "dock": "left",
   },
-  "show_completions_on_input": false,
   "relative_line_numbers": "wrapped",
   "toolbar": {
     "breadcrumbs": true,
@@ -90,8 +125,9 @@
   },
   "title_bar": {
     "show_branch_status_icon": true,
-    "show_branch_name": true,
-    "show_project_items": true,
+    "show_branch_name": false,
+    "show_user_menu": false,
+    "show_project_items": false,
     "show_onboarding_banner": false,
     "show_user_picture": false,
     "show_sign_in": false,
