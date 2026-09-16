@@ -49,7 +49,11 @@
 # theme = "Smyck"
 # theme = "Monokai Soda"
 # theme = "Kanagawa Wave"
-# theme = "kanagawabones"
+# theme = "Kanagawabones"
+# theme = Rose Pine Moon
+
+
+
 # Light
 # theme = "3024 Day"
 # theme = "Atom One Light"
@@ -61,7 +65,7 @@
 # theme = Primary
 # theme = Piatto Light
 # theme = Raycast Light
-# theme = OneHalfLight
+# theme = One Half Light
 # theme = Material
 # theme = Spring
 # theme = GitHub
@@ -71,18 +75,20 @@
 # theme = iTerm2 Tango Light
 # theme = Tango Adapted
 # theme = Tango Half Adapted
+# theme = "Monokai Pro Light"
 # theme = Dayfox
 # theme = Dawnfox
 # theme = Tomorrow
 # theme = CLRS
 # theme = Builtin Tango Light
 # theme = Bluloco Light
+# theme = Rose Pine Dawn
 # theme = Alabaster
 # theme = Flexoki Light
 
 
-command = "/opt/homebrew/bin/tmux"
-window-decoration = auto
+command = "tmux"
+window-decoration = server
 window-show-tab-bar = never
 maximize = true
 macos-non-native-fullscreen = false
@@ -93,14 +99,19 @@ shell-integration-features = no-cursor
 mouse-hide-while-typing = true
 macos-titlebar-proxy-icon = hidden
 window-save-state = always
-window-decoration = server
-window-theme = dark
+window-theme = ghostty
+
+gtk-quick-terminal-layer = background
 gtk-titlebar = true
+
+gtk-toolbar-style = flat
 gtk-tabs-location = top
+
+gtk-titlebar-style = native
 gtk-wide-tabs = true
 adw-toolbar-style = raised-border
 
-
+keybind = ctrl+enter=ignore
 background-opacity = 0.98
 background-blur-radius = 20
 keybind = super+l=clear_screen

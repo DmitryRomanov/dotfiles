@@ -12,6 +12,7 @@
       "milliseconds": 1000,
     },
   },
+  "auto_update": false,
   "edit_predictions": {
     "provider": "none",
   },
@@ -133,11 +134,6 @@
     "show_sign_in": false,
     "show_menus": false,
     "button_layout": "platform_default",
-  },
-  "git": {
-    "inline_blame": {
-      "enabled": false,
-    },
   },
   "collaboration_panel": {
     "dock": "left",
