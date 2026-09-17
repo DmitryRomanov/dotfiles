@@ -112,6 +112,7 @@ gtk-wide-tabs = true
 adw-toolbar-style = raised-border
 
 keybind = ctrl+enter=ignore
+keybind = cmd+enter=ignore
 background-opacity = 0.98
 background-blur-radius = 20
 keybind = super+l=clear_screen
