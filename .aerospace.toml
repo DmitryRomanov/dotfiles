@@ -112,20 +112,25 @@ gaps.outer.right =      0
     cmd-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    cmd-h = 'focus left'
-    cmd-j = 'focus down'
-    cmd-k = 'focus up'
-    cmd-l = 'focus right'
+    cmd-left = 'focus left'
+    cmd-down = 'focus down'
+    cmd-up = 'focus up'
+    cmd-right = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    cmd-shift-h = 'move left'
-    cmd-shift-j = 'move down'
-    cmd-shift-k = 'move up'
-    cmd-shift-l = 'move right'
+    cmd-shift-left = 'move left'
+    cmd-shift-down = 'move down'
+    cmd-shift-up = 'move up'
+    cmd-shift-right = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
     cmd-minus = 'resize smart -50'
     cmd-equal = 'resize smart +50'
+
+    # See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
+    cmd-shift-f = 'fullscreen'
+    # Native macOS fullscreen (separate Space, menu bar hidden)
+    cmd-ctrl-f = 'macos-native-fullscreen'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     cmd-1 = 'workspace 1'
