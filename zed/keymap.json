@@ -9,17 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "space space": [
-        "task::Spawn",
-        { "task_name": "Television File Finder", "reveal_target": "center" },
-      ],
-      "space .": [
-        "task::Spawn",
-        {
-          "task_name": "Television File Finder (current folder)",
-          "reveal_target": "center",
-        },
-      ],
+      "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem",
@@ -41,8 +31,8 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "v s": "pane::SplitRight",
-      "s p": "pane::SplitUp",
+      "ctrl-w v": "pane::SplitRight",
+      "ctrl-w s": "pane::SplitUp",
       "space f s": "workspace::Save",
     },
   },
