@@ -13,15 +13,7 @@
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem",
-    },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "space space": null,
-      "space /": null,
-      "space ,": null,
-      "space w d": null,
+      "space o e": "workspace::ToggleLeftDock",
     },
   },
   {
@@ -29,26 +21,7 @@
     "bindings": {},
   },
   {
-    "context": "Editor && vim_mode == normal",
-    "bindings": {
-      "ctrl-w v": "pane::SplitRight",
-      "ctrl-w s": "pane::SplitUp",
-      "space f s": "workspace::Save",
-    },
-  },
-  {
-    "context": "vim_mode == visual",
-    "bindings": {
-      "shift-s": null,
-    },
-  },
-  {
-    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
-    "bindings": {
-      "shift-s": null,
-    },
-  },
-  {
+    // Глобальные (не vim-specific) биндинги, как в старом конфиге
     "context": "Editor && !menu",
     "bindings": {
       "ctrl-c": "editor::Copy", // vim default: return to normal mode
@@ -56,7 +29,97 @@
       "ctrl-y": "editor::Undo", // vim default: line up
       "ctrl-f": "buffer_search::Deploy", // vim default: page down
       "ctrl-s": "workspace::Save", // vim default: show signature
-      "ctrl-b": "workspace::ToggleLeftDock", // vim default: down
+      "ctrl-b": "workspace::ToggleLeftDock", // vim default: page up
+    },
+  },
+  {
+    // insert mode: не даём leader-префиксам срабатывать при наборе текста
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "space space": null,
+      "space /": null,
+      "space ,": null,
+      "space w d": null,
+      "space o e": null,
+      "ctrl-c": "vim::NormalBefore",
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+    },
+  },
+  {
+    // normal mode — основной блок, аналог nvim remap.lua
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      // --- окна / сплиты ---
+      "ctrl-w v": "pane::SplitRight",
+      "ctrl-w s": "pane::SplitUp",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "tab": "workspace::ActivateNextPane",
+      "shift-tab": "workspace::ActivatePreviousPane",
+
+      // --- save / buffers ---
+      "space f s": "workspace::Save",
+      "space f c": "workspace::SaveAs", // копия файла в новый путь
+      "space b d": "pane::CloseActiveItem",
+      "space b shift-o": ["pane::CloseOtherItems", { "close_pinned": false }],
+
+      // --- замена слова под курсором (<leader>s) ---
+      // выделяет все вхождения слова, дальше просто печатаешь замену
+      "space s": "editor::SelectAllMatches",
+
+      // --- перемещение строк ---
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+
+      // --- инкремент / декремент чисел ---
+      "alt-a": "vim::Increment",
+      "alt-x": "vim::Decrement",
+
+      // --- toggle word wrap ---
+      "alt-z": "editor::ToggleSoftWrap",
+
+      // --- отключаем макросы на Q ---
+      "shift-q": null,
+
+      // --- отключаем стрелки ---
+      "up": null,
+      "down": null,
+      "left": null,
+      "right": null,
+    },
+  },
+  {
+    // visual mode
+    "context": "Editor && vim_mode == visual && !menu",
+    "bindings": {
+      // Tab / Shift-Tab — indent / outdent выделения
+      "tab": "vim::Indent",
+      "shift-tab": "vim::Outdent",
+
+      // перемещение выделенных строк
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+
+      // инкремент / декремент
+      "alt-a": "vim::Increment",
+      "alt-x": "vim::Decrement",
+
+      // отключаем стрелки
+      "up": null,
+      "down": null,
+      "left": null,
+      "right": null,
+
+      "shift-s": null,
+    },
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "shift-s": null,
     },
   },
 ]
