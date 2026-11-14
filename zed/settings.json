@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "proxy": "",
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
@@ -71,6 +72,8 @@
     "dock": "left",
   },
   "agent": {
+    "sidebar_side": "right",
+    "terminal_init_command": "",
     "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
@@ -141,6 +144,9 @@
   },
   "disable_ai": false,
   "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "on_yank",
+  },
   "base_keymap": "VSCode",
   // "buffer_font_family": "FiraCode Nerd Font Mono",
   "buffer_font_family": "CaskaydiaCove Nerd Font Mono",

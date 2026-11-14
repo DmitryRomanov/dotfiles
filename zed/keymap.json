@@ -14,7 +14,9 @@
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem",
       "space o e": "project_panel::Toggle",
+      "space o i": "agent::ToggleFocus",
       "space g g": "git_panel::Toggle",
+      "ctrl-\\": "terminal_panel::Toggle",
     },
   },
   {
@@ -42,6 +44,7 @@
       "space ,": null,
       "space w d": null,
       "space o e": null,
+      "space o i": null,
       "space g g": null,
       "ctrl-c": "vim::NormalBefore",
       "alt-j": "editor::MoveLineDown",
