@@ -72,7 +72,9 @@
     "dock": "left",
   },
   "agent": {
-    "sidebar_side": "right",
+    "threads_sidebar": {
+      "position": "right"
+    },
     "terminal_init_command": "",
     "dock": "right",
     "favorite_models": [],
