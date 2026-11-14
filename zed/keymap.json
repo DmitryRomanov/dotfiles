@@ -13,7 +13,8 @@
       "space /": "pane::DeploySearch",
       "space ,": "tab_switcher::Toggle",
       "space w d": "pane::CloseActiveItem",
-      "space o e": "workspace::ToggleLeftDock",
+      "space o e": "project_panel::Toggle",
+      "space g g": "git_panel::Toggle",
     },
   },
   {
@@ -41,6 +42,7 @@
       "space ,": null,
       "space w d": null,
       "space o e": null,
+      "space g g": null,
       "ctrl-c": "vim::NormalBefore",
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
