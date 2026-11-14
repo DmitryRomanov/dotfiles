@@ -46,6 +46,7 @@
       "space o e": null,
       "space o i": null,
       "space g g": null,
+      "space d b": null,
       "ctrl-c": "vim::NormalBefore",
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
@@ -70,6 +71,20 @@
       "space f c": "workspace::SaveAs", // копия файла в новый путь
       "space b d": "pane::CloseActiveItem",
       "space b shift-o": ["pane::CloseOtherItems", { "close_pinned": false }],
+
+      // --- debugger ---
+      "space d b": "editor::ToggleBreakpoint",
+      "space d i": "debugger::StepInto",
+      "space d o": "debugger::StepOver",
+      "space d shift-o": "debugger::StepOut",
+      "space d p": "debugger::StepBack",
+      "space d k": "debugger::Stop",
+      "space d l": "debugger::Rerun",
+      "space d t": "debugger::RunToCursor",
+      "space d u": "debug_panel::Toggle",
+
+      // --- run / tasks (code-runner) ---
+      "space r r": "task::Spawn",
 
       // --- замена слова под курсором (<leader>s) ---
       // выделяет все вхождения слова, дальше просто печатаешь замену
@@ -119,6 +134,46 @@
       "right": null,
 
       "shift-s": null,
+    },
+  },
+  {
+    // debugger: start, если сессии ещё нет (аналог dap.continue)
+    "context": "Editor && vim_mode == normal && !menu && !debugger_session",
+    "bindings": {
+      "space d c": "debugger::Start",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu && debugger_stopped",
+    "bindings": {
+      "space d c": "debugger::Continue",
+    },
+  },
+  {
+    // F-клавиши как в nvim-dap
+    "context": "Workspace && !debugger_session",
+    "bindings": {
+      "f5": "debugger::Start",
+      "ctrl-shift-d": "debugger::Start",
+    },
+  },
+  {
+    "context": "Workspace && debugger_stopped",
+    "bindings": {
+      "ctrl-shift-d": "debugger::Continue",
+    },
+  },
+  {
+    "context": "Workspace && debugger_session",
+    "bindings": {
+      "ctrl-shift-f5": "debugger::Restart",
+    },
+  },
+  {
+    // F12 = step back, только когда дебаггер стоит на паузе
+    "context": "Editor && debugger_stopped && !menu",
+    "bindings": {
+      "f12": "debugger::StepBack",
     },
   },
   {
