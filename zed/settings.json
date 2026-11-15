@@ -7,13 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "icon_theme": "Zed (Default)",
   "proxy": "",
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
     },
   },
-  "auto_update": false,
+  "auto_update": true,
   "edit_predictions": {
     "provider": "none",
   },
@@ -194,13 +195,13 @@
   "experimental.theme_overrides": {
     "syntax": {
       "type": {
-        "font_weight": 800,
+        "font_weight": 600,
       },
       "keyword": {
-        "font_weight": 800,
+        "font_weight": 700,
       },
       "punctuation.bracket": {
-        "font_weight": 100,
+        "font_weight": 500,
       },
     },
   },
