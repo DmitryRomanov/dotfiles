@@ -85,7 +85,8 @@
 # theme = Rose Pine Dawn
 # theme = Alabaster
 # theme = Flexoki Light
-
+# theme = "Modus Operandi Tinted"
+# theme = "Modus Operandi"
 
 command = "tmux"
 window-decoration = server
