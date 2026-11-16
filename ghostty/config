@@ -88,7 +88,7 @@
 # theme = "Modus Operandi Tinted"
 # theme = "Modus Operandi"
 
-command = "tmux"
+command = "/opt/homebrew/bin/tmux"
 window-decoration = server
 window-show-tab-bar = never
 maximize = true

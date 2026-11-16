@@ -99,6 +99,15 @@
         "buffer_font_size": 23,
       },
     },
+    "laptop": {
+      "settings": {
+        "ui_font_size": 17,
+        "buffer_font_size": 19,
+        "terminal": {
+          "font_size": 16,
+        },
+      },
+    },
   },
   "tabs": {
     "close_position": "right",
