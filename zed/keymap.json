@@ -184,4 +184,10 @@
       "shift-s": null,
     },
   },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-\\": "pane::SplitRight"
+    }
+  },
 ]
