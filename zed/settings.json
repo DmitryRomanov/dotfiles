@@ -93,13 +93,10 @@
     "dark": "Gruvbox Dark",
   },
   "profiles": {
-    "Laptop": {
+    "work": {
       "settings": {
-        "buffer_font_family": "Iosevka Nerd Font Mono",
-        "ui_font_size": 18,
-        "buffer_font_size": 21,
-        "buffer_font_weight": 400,
-        "buffer_line_height": "standard",
+        "ui_font_size": 19,
+        "buffer_font_size": 23,
       },
     },
   },
