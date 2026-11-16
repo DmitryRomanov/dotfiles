@@ -15,6 +15,7 @@
     },
   },
   "auto_update": true,
+  "format_on_save": "on",
   "edit_predictions": {
     "provider": "none",
   },
@@ -75,7 +76,7 @@
   },
   "agent": {
     "threads_sidebar": {
-      "position": "right"
+      "position": "right",
     },
     "terminal_init_command": "",
     "dock": "right",
